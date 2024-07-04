@@ -1,0 +1,25 @@
+{
+    "name": "josecanciani/fusewire-php",
+    "description": "This is the PHP implementation for FuseWire.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "FuseWire\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FuseWire\\Demo\\": "demo/src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jose Canciani"
+        }
+    ],
+    "require": {
+        "symfony/http-foundation": "^5.4",
+        "symfony/filesystem": "^5.4"
+    }
+}

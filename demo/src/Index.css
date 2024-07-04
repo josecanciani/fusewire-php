@@ -1,0 +1,17 @@
+
+li {
+    font-size: smaller;
+}
+
+li strong {
+    color: blue;
+}
+
+table button {
+    font-size: xx-small;
+    width: 10em;
+}
+
+table td {
+    padding: 0.5em 0.2em 0.2em 0.2em;
+}

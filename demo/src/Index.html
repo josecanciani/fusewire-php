@@ -1,0 +1,39 @@
+This is the "((fuseWireComponent))" component.<br>
+We have two variables: a <strong>counter</strong> and a <strong>serverDateString</strong>:<br>
+
+<ul>
+    <li>Counter: <strong>(($counter))</strong></li>
+    <li>Server time: <strong>(($serverDateString))</strong></li>
+</ul>
+
+<table aria-label="Actions to perform in this component">
+    <tr>
+        <th scope="col">Reaction modes</th>
+        <th scope="col">Explanation</th>
+    </tr>
+    <tr>
+        <td><button onClick="((this)).increase()">Client Side Rendering</button></td>
+        <td>
+            <strong>CSR</strong> mode: this is client-side rendering, no server request is done, we only re-render in the client.
+        </td>
+    </tr>
+    <tr>
+        <td><button onClick="((this)).increaseAndPushAndWait()">Server</button></td>
+        <td>
+            <strong>SERVER_WAIT</strong> mode: a request will be made to the server, and nothing will happen until the server responds.
+        </td>
+    </tr>
+    <tr>
+        <td><button onClick="((this)).increaseAndPush()">CSR + Server</button></td>
+        <td>
+            <strong>SERVER</strong> mode: behaves like SERVER_WAIT, but will do a client-side re-rendering too.
+        </td>
+    </tr>
+    <tr>
+        <td><button disabled="disabled">Server Side Rendering</button></td>
+        <td>
+            <strong>SSR</strong> mode: this is server-side rendering (a.k.a. HTML-over-the-wire): all HTML content
+            will be generated on the backend.
+        </td>
+    </tr>
+</table>

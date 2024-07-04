@@ -1,0 +1,18 @@
+body {
+    font-size: 10px;
+    padding: 1em;
+}
+
+.refreshHighlight {
+    -webkit-animation: target-fade 1s 1;
+    -moz-animation: target-fade 1s 1;
+}
+
+@-webkit-keyframes target-fade {
+    0% { background-color: rgba(255,255,153,.8); }
+    100% { background-color: rgba(255,255,153,0); }
+}
+@-moz-keyframes target-fade {
+    0% { background-color: rgba(255,255,153,.8); }
+    100% { background-color: rgba(255,255,153,0); }
+}
