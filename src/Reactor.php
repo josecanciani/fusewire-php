@@ -8,9 +8,9 @@ class Reactor {
     private $config;
     private $httpRequest;
 
-    public function __construct(Config $config, HttpRequest $httpRequest = null) {
+    public function __construct(Config $config, HttpRequest $httpRequest) {
         $this->config = $config;
-        $this->httpRequest = $httpRequest ?: HttpRequest::createFromGlobals();
+        $this->httpRequest = $httpRequest;
     }
 
     public function run(): void {
