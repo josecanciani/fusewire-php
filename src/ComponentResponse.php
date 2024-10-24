@@ -7,7 +7,6 @@ use Symfony\Component\Filesystem\Filesystem;
 class ComponentResponse implements \JsonSerializable {
     public static function load(Config $config, Component $component, ComponentRequest $request = null, Filesystem $io = null): self {
         $vars = $component->jsonSerialize();
-        error_log($component->getFuseWireName() . ': ' . json_encode($vars));
         foreach ($vars as $key => $value) {
             if ($value instanceof Component) {
                 $childRequest = new \stdClass();
